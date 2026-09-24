@@ -58,6 +58,8 @@ modules:
       - type: file
         path: tesseract.sh
       - type: file
+        path: CMakeLists.txt
+      - type: file
         path: io.github.Big_Onche.Tesseract-Continued.desktop
       - type: patch
         path: gcc16.patch
