@@ -59,6 +59,11 @@ modules:
         path: tesseract.sh
       - type: file
         path: io.github.Big_Onche.Tesseract-Continued.desktop
+      - type: patch
+        path: gcc16.patch
+      - type: shell
+        commands:
+          - cp CMakeLists.txt -t src
     post-install:
       - mkdir -p /app/share/tesseract
       - cp -a ../config ../media /app/share/tesseract
